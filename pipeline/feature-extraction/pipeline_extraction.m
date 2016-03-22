@@ -2,8 +2,8 @@ clear all;
 close all;
 clc;
 
-% Add the path for the function
-addpath('../detection');
+% Execute the setup for protoclass matlab
+run('../../../../third-party/protoclass_matlab/setup.m');
 
 % Data after the pre-processing
 data_directory = ['/data/retinopathy/OCT/SERI/pre_processed_data/' ...

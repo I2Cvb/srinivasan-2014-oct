@@ -2,8 +2,8 @@ clear all;
 close all;
 clc;
 
-% Add the path for the function
-addpath('../validation');
+% Execute the setup for protoclass matlab
+run('../../../../third-party/protoclass_matlab/setup.m');
 
 % Refer to the classification pipeline to know how the testing set
 % was created
