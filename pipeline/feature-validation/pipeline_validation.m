@@ -8,7 +8,7 @@ run('../../../../third-party/protoclass_matlab/setup.m');
 % Refer to the classification pipeline to know how the testing set
 % was created
 % Location of the ground-truth
-gt_file = '../../../../data/data.csv';
+gt_file = '/data/retinopathy/OCT/SERI/data.xls';
 
 % Load the csv data
 [~, ~, raw_data] = xlsread(gt_file);
@@ -30,7 +30,7 @@ end
 
 % Load the results data
 results_filename = ['/data/retinopathy/OCT/SERI/results/' ...
-                    'srinivasan_2014/predicition_hog_lbp_8_ri.mat'];
+                    'srinivasan_2014/predicition.mat'];
 load(results_filename);
 
 % Linearize the vector loaded

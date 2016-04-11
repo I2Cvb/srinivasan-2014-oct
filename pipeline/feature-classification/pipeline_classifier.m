@@ -5,12 +5,12 @@ clc;
 % Give the information about the data location
 % Location of the features
 data_directory = ['/data/retinopathy/OCT/SERI/feature_data/' ...
-                  'srinivasan_2014/'];
+                  'srinivasan_2014/hog/'];
 % Location to store the results
 store_directory = ['/data/retinopathy/OCT/SERI/results/' ...
                    'srinivasan_2014/'];
 % Location of the ground-truth
-gt_file = '../../../../data/data.csv';
+gt_file = '/data/retinopathy/OCT/SERI/data.xls';
 
 % Load the csv data
 [~, ~, raw_data] = xlsread(gt_file);
