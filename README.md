@@ -21,7 +21,7 @@ How to use the pipeline?
 
 #### Data variables
 
-In the file `pipeline/feature-preprocessing/pipeline-preprocessing.m`, you need to set the following variables:
+In the file `pipeline/feature-preprocessing/pipeline_preprocessing.m`, you need to set the following variables:
 
 - `data_directory`: this directory contains the orignal SD-OCT volume. The format used was `.img`.
 - `store_directory`: this directory corresponds to the place where the resulting data will be stored. The format used was `.mat`.
@@ -39,14 +39,14 @@ The variables which are not indicated in the inital publication and that can be 
 From the root directory, launch MATLAB and run:
 
 ```
->> run pipeline/feature-preprocessing/pipeline-preprocessing.m
+>> run pipeline/feature-preprocessing/pipeline_preprocessing.m
 ```
 
 ### Extraction pipeline
 
 #### Data variables
 
-In the file `pipeline/feature-extraction/pipeline-extraction.m`, you need to set the following variables:
+In the file `pipeline/feature-extraction/pipeline_extraction.m`, you need to set the following variables:
 
 - `data_directory`: this directory contains the pre-processed SD-OCT volume. The format used was `.mat`.
 - `store_directory`: this directory corresponds to the place where the resulting data will be stored. The format used was `.mat`.
@@ -56,14 +56,14 @@ In the file `pipeline/feature-extraction/pipeline-extraction.m`, you need to set
 From the root directory, launch MATLAB and run:
 
 ```
->> run pipeline/feature-extraction/pipeline-extraction.m
+>> run pipeline/feature-extraction/pipeline_extraction.m
 ```
 
 ### Classification pipeline
 
 #### Data variables
 
-In the file `pipeline/feature-preprocessing/pipeline-preprocessing.m`, you need to set the following variables:
+In the file `pipeline/feature-preprocessing/pipeline_preprocessing.m`, you need to set the following variables:
 
 - `data_directory`: this directory contains the feature extracted from the SD-OCT volumes. The format used was `.mat`.
 - `store_directory`: this directory corresponds to the place where the resulting data will be stored. The format used was `.mat`.
@@ -74,14 +74,14 @@ In the file `pipeline/feature-preprocessing/pipeline-preprocessing.m`, you need 
 From the root directory, launch MATLAB and run:
 
 ```
->> run pipeline/feature-classification/pipeline-classification.m
+>> run pipeline/feature-classification/pipeline_classifier.m
 ```
 
 ### Validation pipeline
 
 #### Data variables
 
-In the file `pipeline/feature-preprocessing/pipeline-preprocessing.m`, you need to set the following variables:
+In the file `pipeline/feature-preprocessing/pipeline_preprocessing.m`, you need to set the following variables:
 
 - `data_directory`: this directory contains the classification results. The format used was `.mat`.
 - `gt_file`: this is the file containing the label for each volume. You will have to make your own strategy.
@@ -91,5 +91,5 @@ In the file `pipeline/feature-preprocessing/pipeline-preprocessing.m`, you need 
 From the root directory, launch MATLAB and run:
 
 ```
->> run pipeline/feature-validation/pipeline-validation.m
+>> run pipeline/feature-validation/pipeline_validation.m
 ```
