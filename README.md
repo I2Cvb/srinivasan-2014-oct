@@ -19,6 +19,12 @@ How to use the pipeline?
 
 ### Pre-processing pipeline
 
+The following pre-processing routines were applied:
+
+- BM3D denoising,
+- Flattening,
+- Cropping.
+
 #### Data variables
 
 In the file `pipeline/feature-preprocessing/pipeline_preprocessing.m`, you need to set the following variables:
@@ -44,6 +50,10 @@ From the root directory, launch MATLAB and run:
 
 ### Extraction pipeline
 
+The following features were extracted:
+
+- HOG.
+
 #### Data variables
 
 In the file `pipeline/feature-extraction/pipeline_extraction.m`, you need to set the following variables:
@@ -60,6 +70,10 @@ From the root directory, launch MATLAB and run:
 ```
 
 ### Classification pipeline
+
+The method for classification used was:
+
+- Linear SVM.
 
 #### Data variables
 
