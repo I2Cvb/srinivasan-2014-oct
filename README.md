@@ -1,8 +1,6 @@
 Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images
 =====================================================================================================================================
 
-[![DOI](https://zenodo.org/badge/16195/I2Cvb/srinivasan-2014-oct.svg)](https://zenodo.org/badge/latestdoi/16195/I2Cvb/srinivasan-2014-oct)
-
 ```
 @article{srinivasan2014fully,
   title={Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images},
